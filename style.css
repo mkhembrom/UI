@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background: #161616;
+    color: #fff;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right{
+    flex: 2;
+}
+
+#sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.sign-in-form{
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#sign-in label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#sign-in .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #161616;
+    border: 1px solid orangered;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+#sign-in .primary-btn{
+    width: 100%;
+}
+
+.primary-btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: orangered;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s; 
+
+}
+
+.primary-btn:hover{
+    background-color: salmon;
+}
+
+.secondary-btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid orangered;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s; 
+
+}
+
+.secondary-btn:hover{
+    border-color: salmon;
+}
+
+#sign-in .secondary-btn,
+.or,
+.links{
+    width: 60%;
+}
+
+#sign-in .links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#sign-in .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#sign-in .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#sign-in .or span{
+    color: #aaa;
+    padding: 0 0.8rem;
+}
+
+#showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/login-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#showcase .showcase-text{
+    font-size: 2rem;
+    width: 100%;
+    color: #fff;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    background-color: #f84f0085;
+    margin-bottom: 1.5rem;
+}
+
+#main-footer{
+    color: #aaa;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 3rem;
+}
+
+#main-footer a{
+    color: orangered;
+    text-decoration: underline;
+}
+
+@media(max-width: 800px){
+    #left{
+        flex: 1;
+    }
+
+    #right{
+        flex: 1;
+    }
+
+}
+
+@media(max-width: 568px){
+    #right{
+        display: none;
+    }
+}
